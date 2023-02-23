@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.useless-class{
+  color: #000;
+}
+
 body {
   min-width: 480px;
   min-height: 100vh;
