@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon" id="songPrev"></button>
+        <button class="play player-icon" id="playButton"></button>
+        <button class="play-next player-icon" id="songNext"></button>
+      </div>
+      <ul class="play-list">
+        <li class="play-item">Aqua Caelestis</li>
+        <li class="play-item">River Flows In You</li>
+        <li class="play-item">Summer Wind</li>
+        <li class="play-item">Ennio Morricone</li>
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" id="city-input"/>
+      <i class="weather-icon owf" id="weather-icon"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature" id="weather-temperature"></span>
+        <span class="weather-description" id="weather-description"></span>
+      </div>
+      <div class="wind" id="weather-wind"></div>
+      <div class="humidity" id="weather-humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon" onclick="imgPrev()"></button>
+      <button class="slide-next slider-icon" onclick="imgNext()"></button>
+    </div>
+    <time class="time" id="time"></time>
+    <date class="date" id="date"></date>
+    <div class="greeting-container">
+      <span class="greeting" id="greeting"></span>
+      <input type="text" class="name" id="nameInput"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote" onclick="getQuote()"></button>
+    <div>
+      <div class="quote" id="quote"></div>
+      <div class="author" id="author"></div>
+    </div>
+  </footer>
+</body>
+<script src="./js/clock.js"></script>
+<script src="./js/quote.js"></script>
+<script src="./js/greeting.js"></script>
+<script src="./js/background.js"></script>
+<script src="./js/weather.js"></script>
+<script src="./js/musicplayer.js"></script>
+</html>
